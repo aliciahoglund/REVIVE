@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boka din plats – 99 kr | RE:VIVE Studio</title>
+  <meta name="description" content="Boka en privat tid på RE:VIVE Studio. Välj släpp, tid och antal personer (1–3) och betala 99 kr för att säkra platsen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body class="page-boka">
+  <div class="announce">Nästa släpp: Scandinavian Style · 24–25 okt <a href="slapp.html#scandi">Se lediga tider</a></div>
+  <header class="site-header">
+    <div class="nav-pill">
+      <nav class="nav-group left" aria-label="Huvudmeny"><a class="nav-link" href="slapp.html">Kommande släpp</a><a class="nav-link" href="slapp.html#teman">Teman</a><a class="nav-link" href="om-oss.html">Om oss</a></nav>
+      <a href="index.html" class="wordmark" aria-label="RE:VIVE Studio – startsida">re:vive<small>studio</small></a>
+      <div class="nav-group right"><a class="nav-link" href="blogg.html">Inspiration</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="kontakt.html">Kontakt</a><a href="boka.html" class="btn btn-wine btn-sm">Boka – 99 kr</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu">Meny</button></div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobilmeny"><a href="slapp.html">Kommande släpp</a><a href="slapp.html#teman">Teman</a><a href="om-oss.html">Om oss</a><a href="blogg.html">Inspiration</a><a href="faq.html">FAQ</a><a href="kontakt.html">Kontakt</a><a href="boka.html">Boka din plats – 99 kr</a></nav>
+  </header>
+  <main>
+
+    <section class="page-hero" style="padding-bottom:24px">
+      <div class="container"><span class="eyebrow">Bokning</span><h1 class="h1" style="margin-top:10px;color:var(--wine)">Boka din plats</h1>
+        <p class="lead" style="margin-top:12px">Fyra korta steg. Platsen är säkrad när 99 kr är betalt – då får du också den hemliga adressen.</p></div>
+    </section>
+    <section class="container section-sm" style="padding-top:12px">
+      <form class="book-layout" id="bookingForm" novalidate>
+        <div>
+          <div class="book-step" id="step-1">
+            <div class="step-head"><span class="n">01</span><h2>Välj släpp och tid</h2></div>
+            <div class="drop-choices"><button type="button" class="drop-choice" data-drop="scandi"><img src="assets/images/crops/s_walk.jpg" alt=""><span class="t"><strong>Scandinavian Style</strong><span>24–25 okt</span></span></button><button type="button" class="drop-choice" data-drop="y2k"><img src="assets/images/crops/y_walk.jpg" alt=""><span class="t"><strong>Y2K Streetwear</strong><span>7–8 nov</span></span></button><button type="button" class="drop-choice" data-drop="designer"><img src="assets/images/crops/d_bag.jpg" alt=""><span class="t"><strong>Vintage & Designer</strong><span>21–22 nov</span></span></button><button type="button" class="drop-choice" data-drop="japanese" disabled><img src="assets/images/crops/j_left.jpg" alt=""><span class="t"><strong>Japanese Vintage</strong><span>5–6 dec · öppnar 15 nov</span></span></button></div>
+            <div class="picker" data-picker="" data-mode="booking" style="margin-top:16px"><p class="muted small">Välj ett släpp ovan för att se lediga tider.</p></div>
+          </div>
+
+          <div class="book-step" id="step-2">
+            <div class="step-head"><span class="n">02</span><h2>Hur många är ni?</h2></div>
+            <div class="guest-choices">
+              <button type="button" class="guest-choice" data-guests="1"><strong>1</strong><span>Bara jag</span></button>
+              <button type="button" class="guest-choice active" data-guests="2"><strong>2</strong><span>Jag + en vän</span></button>
+              <button type="button" class="guest-choice" data-guests="3"><strong>3</strong><span>Jag + två vänner</span></button>
+            </div>
+            <p class="muted small" style="margin-top:10px">Priset är 99 kr per bokning – samma för 1, 2 eller 3 personer.</p>
+          </div>
+
+          <div class="book-step" id="step-3">
+            <div class="step-head"><span class="n">03</span><h2>Dina uppgifter</h2></div>
+            <div class="field-grid">
+              <div class="field"><label for="bf-first">Förnamn</label><input class="input" id="bf-first" name="first" autocomplete="given-name" required></div>
+              <div class="field"><label for="bf-last">Efternamn</label><input class="input" id="bf-last" name="last" autocomplete="family-name" required></div>
+              <div class="field"><label for="bf-email">E-post (bekräftelsen skickas hit)</label><input class="input" id="bf-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="bf-phone">Mobilnummer (adress &amp; portkod via sms)</label><input class="input" id="bf-phone" name="phone" type="tel" autocomplete="tel" placeholder="070-123 45 67" required pattern="[0-9 +\-]{8,}"></div>
+              <div class="field full"><label for="bf-note">Något vi ska veta? (valfritt)</label><input class="input" id="bf-note" name="note" placeholder="T.ex. storlek du letar efter eller ett speciellt tillfälle"></div>
+            </div>
+          </div>
+
+          <div class="book-step" id="step-4">
+            <div class="step-head"><span class="n">04</span><h2>Betala 99 kr</h2></div>
+            <div class="pay-methods">
+              <button type="button" class="pay-method active" data-pay="swish"><strong>Swish</strong><span>Godkänn i appen med BankID</span></button>
+              <button type="button" class="pay-method" data-pay="card"><strong>Kort</strong><span>Visa eller Mastercard</span></button>
+            </div>
+            <div id="cardFields" hidden>
+              <div class="field-grid">
+                <div class="field full"><label for="bf-card">Kortnummer</label><input class="input" id="bf-card" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456"></div>
+                <div class="field"><label for="bf-exp">Utgångsdatum</label><input class="input" id="bf-exp" autocomplete="cc-exp" placeholder="MM/ÅÅ"></div>
+                <div class="field"><label for="bf-cvc">CVC</label><input class="input" id="bf-cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123"></div>
+              </div>
+            </div>
+            <label class="check" style="margin-top:18px"><input type="checkbox" id="bf-terms" required> <span>Jag godkänner <a href="faq.html#avbokning">bokningsvillkoren</a>: 99 kr dras av vid köp i studion och återbetalas vid avbokning senast 24 timmar innan.</span></label>
+            <button type="submit" class="btn btn-wine btn-block" style="margin-top:22px;padding:18px" id="payBtn">Betala 99 kr och få adressen</button>
+            <p class="form-error" id="formError" role="alert"></p>
+            <div class="trust"><span>Krypterad betalning</span><span>Kostnadsfri avbokning 24 h innan</span><span>99 kr dras av vid köp</span></div>
+          </div>
+        </div>
+
+        <aside class="summary" aria-live="polite">
+          <div class="img"><img id="sumImg" src="assets/images/hero_loft.jpg" alt=""></div>
+          <div class="body">
+            <span class="eyebrow">Din bokning</span>
+            <h3 id="sumDrop">Välj ett släpp</h3>
+            <dl>
+              <div><dt>Datum</dt><dd id="sumDate">–</dd></div>
+              <div><dt>Tid</dt><dd id="sumTime">–</dd></div>
+              <div><dt>Sällskap</dt><dd id="sumGuests">2 personer</dd></div>
+              <div><dt>Plats</dt><dd>Hemlig – avslöjas vid bokning</dd></div>
+            </dl>
+            <div class="total"><span>Att betala nu</span><strong>99 kr</strong></div>
+            <p class="note">Beloppet dras av från ditt köp i studion. Handlar du inget är det en avgift för din privata tid.</p>
+            <div class="lock">🔒 Adress och portkod visas direkt efter betalningen och skickas även via sms och e-post.</div>
+          </div>
+        </aside>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-news">
+          <h4>Hemliga släpp i inkorgen</h4>
+          <p>Nya teman och tider skickas till listan 24 timmar innan bokningen öppnar för alla.</p>
+          <form class="js-newsletter"><label class="sr-only" for="fn-email">E-post</label><input id="fn-email" class="input" type="email" placeholder="Din e-post" required><button class="btn btn-cream btn-sm" type="submit">Gå med</button></form>
+        </div>
+        <div><h4>Släpp</h4><ul><li><a href="slapp.html">Kommande släpp</a></li><li><a href="tema-scandinavian.html">Scandinavian Style</a></li><li><a href="tema-y2k.html">Y2K Streetwear</a></li><li><a href="tema-vintage-designer.html">Vintage & Designer</a></li><li><a href="tema-japanese.html">Japanese Vintage</a></li></ul></div>
+        <div><h4>Studion</h4><ul><li><a href="om-oss.html">Om oss</a></li><li><a href="blogg.html">Inspiration</a></li><li><a href="tjanster.html">Sälj dina plagg</a></li></ul></div>
+        <div><h4>Hjälp</h4><ul><li><a href="boka.html">Boka din plats</a></li><li><a href="faq.html">Vanliga frågor</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="https://instagram.com/revivestudio.se" rel="noopener">Instagram</a></li></ul></div>
+      </div>
+      <div class="footer-word" aria-hidden="true">re:vive</div>
+      <div class="footer-bottom"><span>© 2026 RE:VIVE Studio · Göteborg</span><span>Privat second hand · Hemlig plats · 1–3 personer</span></div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
